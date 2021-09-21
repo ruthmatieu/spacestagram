@@ -8,13 +8,14 @@ import Reaction from "./NasaReaction";
 
 const NasaContainer = () => {
     const key = 'fETbCakhpVh7nThjldhSJ3FqPIGXBsdmlGkLLcwx'
-    //const [nasaInfo, setNasaInfo] = useState([]);
+    const [nasaInfo, setNasaInfo] = useState([]);
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=${key}`)
         .then(res => {
             console.log(res.data)
+            setNasaInfo(res.data)
         })
         .catch(err => {
             console.log('Error: ', err)
@@ -27,7 +28,7 @@ const NasaContainer = () => {
         } else {
             return (
                 <div>
-                    <Image/>
+                    <Image data={nasaInfo}/>
                     <Description/>
                     <Reaction/>
                 </div>
