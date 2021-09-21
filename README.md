@@ -1,7 +1,7 @@
 # Spacestagram - React Web App
 View beautiful images of space brought you from NASA while also learning some cool, relevant facts.
 
-![Homepage](/client/src/images/main-image.png)
+![Homepage](/src/images/main-image.png)
 
 ## Table of Contents
 * [General Info](#general-info)
