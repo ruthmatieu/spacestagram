@@ -30,18 +30,25 @@ const NasaContainer = () => {
             return (
                 <div>
                     <Image data={nasaInfo}/>
-                    <Description data={nasaInfo}/>
                     <Reaction/>
+                    <Description data={nasaInfo}/>
                 </div>
             )
         }
     }
 
     return (
-        <div>
+        <Container>
             {loadingCheck()}
-        </div>
+        </Container>
     )
 }
 
 export default NasaContainer;
+
+const Container = styled.div`
+    text-align: center;
+    max-width: 1680px;
+    overflow: hidden;
+    margin: 0 auto;
+`

@@ -5,11 +5,21 @@ const NasaImage = (props) => {
     //console.log('DATA', props.data)
     return (
 
-        <div>
+        <Container>
             <h2>{props.data.title}</h2>
-            <img src={props.data.hdurl} alt={props.data.copyright} style={{width: '40%'}}/>
-        </div>
+            <img src={props.data.hdurl} alt={props.data.copyright}/>
+        </Container>
     )
 }
 
 export default NasaImage;
+
+const Container = styled.div`
+    h2 {
+        font-size: 4rem;
+    }
+
+    img {
+        width: 50%;
+    }
+`
