@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styled from 'styled-components';
+
 import { AiFillLike } from 'react-icons/ai';
 import { AiFillDislike } from 'react-icons/ai';
 
