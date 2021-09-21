@@ -25,7 +25,7 @@ const NasaContainer = () => {
 
     const loadingCheck = () => {
         if(loading){
-            return <h1>Loading NASA...</h1>
+            return <h1>Loading Spacestagram...</h1>
         } else {
             return (
                 <div>

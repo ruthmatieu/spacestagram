@@ -17,12 +17,17 @@ const NasaReaction = () => {
 
     return (
         <Container>
-            {count <= 0 ? <p>Be the first to like this post</p>
-            : count === 1 ? <p>{count} like</p>
-            : <p>{count} likes</p>
-            }
-            <button><AiFillLike onClick={likeImage} style={{color: 'green'}}/></button>
-            <button><AiFillDislike onClick={dislikeImage} style={{color: 'red'}}/></button>
+            <div className="reaction">
+                { 
+                    count <= 0 ? <p>Be the first to like this post</p>
+                    : count === 1 ? <p>{count} like</p>
+                    : <p>{count} likes</p>
+                }
+            </div>
+            <div className="btns">
+                <button onClick={likeImage} className="like"><AiFillLike style={{color: '#28C602'}} size={22}/></button>
+                <button onClick={dislikeImage} className="dislike"><AiFillDislike style={{color: 'red'}} size={22}/></button>
+            </div>
         </Container>
     )
 }
@@ -30,5 +35,34 @@ const NasaReaction = () => {
 export default NasaReaction;
 
 const Container = styled.div`
-    
+    text-align: left;
+    margin-left: 25%;
+
+    .reaction {
+        font-size: 0.9rem;
+    }
+
+    .like, .dislike {
+        padding: 0.5rem 1.2rem;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .like:hover, .dislike:hover {
+        cursor: pointer;
+        background-color: #e7fce3;
+    }
+
+    .like:hover {
+        background-color: #e7fce3;
+    }
+
+    .dislike:hover {
+        background-color: #ffe8e8;
+    }
+
+    .like {
+        margin-right: 1rem;
+    }
 `
