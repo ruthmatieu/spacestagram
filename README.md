@@ -1,7 +1,7 @@
 # Spacestagram - React Web App
 View beautiful images of space brought you from NASA while also learning some cool, relevant facts.
 
-![Homepage](/client/src/images/main-image.png)
+![Homepage](/src/images/main-image.png)
 
 ## Table of Contents
 * [General Info](#general-info)
@@ -10,7 +10,7 @@ View beautiful images of space brought you from NASA while also learning some co
 * [Status](#status)
 
 ### General Info
-Spacestagram is a web app created as a mandatory step of the application process for Shopify's Frontend Developer Internship.
+Spacestagram is a web app created as a mandatory step of the application process for Shopify's Frontend Developer Internship role.
 
 ### Technologies
 Spacestagram is created with:
