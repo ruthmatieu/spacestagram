@@ -29,7 +29,7 @@ const NasaContainer = () => {
             return (
                 <div>
                     <Image data={nasaInfo}/>
-                    <Description/>
+                    <Description data={nasaInfo}/>
                     <Reaction/>
                 </div>
             )

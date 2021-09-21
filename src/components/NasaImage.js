@@ -1,7 +1,7 @@
 import React from "react";
 
 const NasaImage = (props) => {
-    console.log('DATA', props.data)
+    //console.log('DATA', props.data)
     return (
 
         <div>

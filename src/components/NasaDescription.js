@@ -1,9 +1,9 @@
 import React from "react";
 
-const NasaDescription = () => {
+const NasaDescription = (props) => {
     return (
         <div>
-            desc
+            <p>{props.data.explanation}</p>
         </div>
     )
 }
