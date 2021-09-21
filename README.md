@@ -1,5 +1,6 @@
 # Spacestagram - React Web App
 View beautiful images of space brought you from NASA while also learning some cool, relevant facts.
+View the live site: https://spacestagram-live.netlify.app/
 
 ![Homepage](/src/images/main-image.png)
 
